@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>LOGIN</title>
+</head>
+<body>
+
+    <form class="div-form" id="signup" action="#" method="post" onsubmit="return registerValidation()">
+        <div>
+
+            <h1>Login</h1>
+
+            <br>
+            <label class="label-field" for="name">Full Name</label>
+            <input class="input-field" type="text" name="fname" placeholder="Enter Full Name">
+            <span class="span-field" id="fullNameError" style="color: red;"></span>
+
+            <br>
+            <label class="label-field" for="email">Email address</label>
+            <input class="input-field" type="email" name="email" id="email" placeholder="Enter email">
+            <span class="span-field" id="emailError" style="color: red;"></span>
+        
+            <br>
+            <label class="label-field" for="password">Password</label>
+            <input class="input-field" type="password" name="password" id="password" placeholder="Enter Password">
+            <span class="span-field" id="passwordError" style="color: red;"></span>
+            
+            <br>
+            <label class="label-field" for="password">Phone Number</label>
+            <input class="input-field" type="tel" name="phone" placeholder="Enter Number" maxlength="10">
+            <span class="span-field" id="phoneError" style="color: red;"></span>
+
+            <br>
+            <button>Submit</button>
+
+        </div>
+
+    </form>    
+    
+    <script src="./login.js"></script>
+</body>
+</html>
